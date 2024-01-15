@@ -1,0 +1,15 @@
+{
+  "name": "improving",
+  "version": "1.0.0",
+  "description": "Leer pdf y pasar informacion a tabla excel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NiAlCa",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "pdf-parse": "^1.1.1"
+  }
+}
