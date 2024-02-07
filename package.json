@@ -1,15 +1,26 @@
 {
-  "name": "improving",
+  "name": "tu-proyecto",
   "version": "1.0.0",
-  "description": "Leer pdf y pasar informacion a tabla excel",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "package": "pkg . --targets node14-win-x64,node14-macos-x64,node14-linux-x64 --output mi-app-ejecutable"
   },
-  "author": "NiAlCa",
-  "license": "ISC",
   "dependencies": {
-    "exceljs": "^4.4.0",
-    "pdf-parse": "^1.1.1"
+    "exceljs": "^4.3.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "pdf-parse": "^1.1.1",
+    "pdfjs": "^2.5.3"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*"
+    ],
+    "targets": [
+      "node14-win-x64"
+    ]
   }
 }
