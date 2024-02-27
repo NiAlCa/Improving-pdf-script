@@ -6,7 +6,7 @@ const path = require('path');
 const folderPath = process.cwd();
 
 //Patrones de Regex
-const regexInformacionCompleta = /(\d+)(\d{2}\/\d{2}\/\d{4} \d{2}:\d{2})([A-Za-z0-9\s]+[A-Za-zÀ-ÿ\u00f1\u00d1]+\s+)/;
+const regexInformacionCompleta = /(\d+)(\d{2}\/\d{2}\/\d{4}(?: \d{2}:\d{2})?)([A-Za-z0-9\s]+[A-Za-zÀ-ÿ\u00f1\u00d1]+\s+)/;
 const regexDestino = /\b[0-9]{4}(\s[A-Za-z]+)+\b/;
 const regexDestinoReal = /ESP\d\d\d\d\d ([A-Za-z]+( [A-Za-z]+)+)/;
 const regexPedidoViaje = /(\d{8}\/\d)([a-zA-Z0-9]+)/; 
