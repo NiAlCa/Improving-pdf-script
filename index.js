@@ -71,34 +71,32 @@ function tieneCoincidencias(numeroDeViaje, camiones) {
     return camiones.filter(camion => camion.numeroDeViaje === numeroDeViaje).length > 1;
 }
 const colors = [
-    'FFFF00', // Amarillo
-    'FF0000', // Rojo
-    '00FF00', // Verde
-    '0000FF', // Azul
-    'FF00FF', // Magenta
-    '00FFFF', // Cian
-    'FF8000', // Naranja
-    '8000FF', // Morado
-    'A52A2A', // Marrón
-    '808080', // Gris
-    '000000', // Negro
-    'FFFFFF', // Blanco
-    'FFC0CB', // Rosa
-    'FA8072', // Salmón
-    'FFE5B4', // Melocotón
-    '808000', // Verde oliva
-    '000080', // Azul marino
-    'C8A2C8', // Lila
-    'FFD700', // Amarillo vibrante
-    'DC143C', // Rojo vibrante
-    '00FF7F', // Verde vibrante
-    '007FFF', // Azul vibrante
-    'FF0080', // Magenta vibrante
-    '00FFFF', // Cian vibrante
-  
-
-
+    'FFFFCC', // Amarillo pastel
+    'FFCCCC', // Rojo pastel
+    'CCFFCC', // Verde pastel
+    'CCCCFF', // Azul pastel
+    'FFCCFF', // Magenta pastel
+    'CCFFFF', // Cian pastel
+    'FFD8B1', // Naranja pastel
+    'B19CD9', // Morado pastel
+    'DABDAB', // Marrón pastel
+    'C0C0C0', // Gris pastel
+    '808080', // Negro no tiene pastel exacto, pero se puede suavizar a gris
+    'FFFFFF', // Blanco ya es un color pastel
+    'FFDEE9', // Rosa pastel
+    'FFA07A', // Salmón pastel
+    'FFEFD5', // Melocotón pastel
+    'BDB76B', // Verde oliva pastel
+    'ADD8E6', // Azul marino pastel
+    'E6E6FA', // Lila pastel
+    'FFFACD', // Amarillo vibrante pastel
+    'F08080', // Rojo vibrante pastel
+    '90EE90', // Verde vibrante pastel
+    'B0E0E6', // Azul vibrante pastel
+    'FFB6C1', // Magenta vibrante pastel
+    'E0FFFF', // Cian vibrante pastel
 ];
+
 
 // Función para asignar un color único a cada número de pedido
 function getColorForPedido(numeroDeViaje, pedidoColorsMap) {
